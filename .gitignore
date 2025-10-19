@@ -4,3 +4,9 @@
 **/.env.example
 **/node_modules
 **/prompts_master.md
+# Archivos y carpetas de Visual Studio
+.vs/
+*.vscode/
+*.user
+*.suo
+*.vsidx
