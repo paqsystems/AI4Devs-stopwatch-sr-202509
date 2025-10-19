@@ -1,29 +1,29 @@
 # stopwatch-PAQ
 
-Proyecto: Cronómetros y cuentas regresivas múltiples (StopWatch / CountDown)
+Proyecto: Cronometros y cuentas regresivas multiples (StopWatch / CountDown)
 
-Descripción
+Descripcion
 ---
-Pequeña aplicación web para crear y gestionar múltiples procesos de conteo simultáneos: cronómetros (ascendentes) y temporizadores (descendentes). Cada proceso corre de forma independiente en su propia tarjeta y muestra horas, minutos, segundos y milisegundos.
+Pequena aplicacion web para crear y gestionar multiples procesos de conteo simultaneos: cronometros (ascendentes) y temporizadores (descendentes). Cada proceso corre de forma independiente en su propia tarjeta y muestra horas, minutos, segundos y milisegundos.
 
-Características
+Caracteristicas
 ---
 - Crear instancias `StopWatch` y `CountDown` desde la pantalla principal.
 - Cada instancia tiene:
-  - Reloj principal (HH:MM:SS) y milisegundos (.mmm) en tamaño reducido.
+  - Reloj principal (HH:MM:SS) y milisegundos (.mmm) en tamano reducido.
   - Inputs para definir tiempo (HH, MM, SS). Solo segundos enteros.
   - Botones: `Iniciar`, `Pausar`/`Reanudar`, `Resetear`.
   - Mensaje al finalizar: `Tarea concluida` (StopWatch) o `Tiempo Cumplido` (CountDown).
-  - Reproducción de un beep de alerta al finalizar (WebAudio API).
-- Diseño responsive: en pantallas grandes se muestran varias tarjetas por fila usando CSS Grid.
+  - Reproduccion de un beep de alerta al finalizar (WebAudio API).
+- Diseno responsive: en pantallas grandes se muestran varias tarjetas por fila usando CSS Grid.
 
 Archivos principales
 ---
 - `index.html` - Punto de entrada de la UI.
 - `style.css` - Estilos en CSS puro.
-- `script.js` - Lógica para instanciar y controlar múltiples procesos.
+- `script.js` - Logica para instanciar y controlar multiples procesos.
 - `PROMPTS.MD` - Registro de prompts usados para generar el proyecto.
-- `CHATBOT.MD` - Información sobre la interacción con el chatbot (archivo vacío inicialmente).
+- `CHATBOT.MD` - Informacion sobre la interaccion con el chatbot (archivo vacio inicialmente).
 
 Uso
 ---
@@ -32,21 +32,21 @@ Uso
 3. Introducir horas, minutos y segundos (valores enteros).
 4. Pulsar `Iniciar`. Usar `Pausar` para detener temporalmente y `Resetear` para volver al estado inicial.
 
-Notas técnicas
+Notas tecnicas
 ---
-- No se requiere servidor; archivos estáticos suficientes.
+- No se requiere servidor; archivos estaticos suficientes.
 - El sonido de alerta usa la WebAudio API para evitar incluir archivos binarios.
 - El muestreo de milisegundos se actualiza con `setInterval` a ~31ms para equilibrio entre suavidad y consumo.
 
 Limitaciones y consideraciones
 ---
-- No se usan notificaciones del navegador (según indicación del usuario).
+- No se usan notificaciones del navegador (segun indicacion del usuario).
 - Los inputs aceptan solo enteros; no hay fracciones de segundo.
 
 Contribuciones
 ---
-Si quieres mejorar estilos, accesibilidad o añadir export/import de estados, edita los archivos en esta carpeta y crea un pull request.
+Si quieres mejorar estilos, accesibilidad o anadir export/import de estados, edita los archivos en esta carpeta y crea un pull request.
 
 Licencia
 ---
-Código provisto como ejemplo para ejercicios. Reutilízalo según las políticas del repositorio principal.
+Codigo provisto como ejemplo para ejercicios. Reutilizalo segun las politicas del repositorio principal.
